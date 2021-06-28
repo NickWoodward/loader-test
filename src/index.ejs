@@ -8,6 +8,6 @@
 </head>
 <body>
     <div class="title">Webpack 5 Test</div>
-    <svg><use xlink:href="svg/spritesheet.svg#webpack"></svg>
+    <%= compilation.assets["sprite.svg"].source() %>
 </body>
 </html>

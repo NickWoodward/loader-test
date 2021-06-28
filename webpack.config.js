@@ -3,6 +3,7 @@ const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 
 
 module.exports = {
+    mode: 'development',
     entry: {
         index: './src/js/index.js',
         
@@ -21,7 +22,7 @@ module.exports = {
                         loader: 'svg-sprite-loader',
                         options: {
                             extract: true,
-                            spriteFilename: 'svg/spritesheet.svg'
+                            spriteFilename: 'sprite.svg'
                         },
                     },
                     'svgo-loader',
@@ -33,7 +34,6 @@ module.exports = {
     plugins: [
         new HtmlWebpackPlugin({
             filename: 'index.html',
-            template: './src/index.html',
             chunks: ['index']
         }),
         new SpriteLoaderPlugin(),
