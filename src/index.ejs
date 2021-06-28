@@ -7,7 +7,10 @@
     <title>WEBPACK 5 TEST</title>
 </head>
 <body>
-    <div class="title">Webpack 5 Test</div>
-    <%= compilation.assets["sprite.svg"].source() %>
+    <div class="title">Webpack Tests</div>
+    <svg><use xlink:href="svg/spritesheet.svg#webpack"></svg>
+    <svg><use xlink:href="svg/spritesheet.svg#webpack2"></svg>
+
+
 </body>
 </html>

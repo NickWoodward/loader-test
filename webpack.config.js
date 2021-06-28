@@ -4,6 +4,9 @@ const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 
 module.exports = {
     mode: 'development',
+    devServer: {
+        port: 8090
+    },
     entry: {
         index: './src/js/index.js',
         
@@ -22,7 +25,7 @@ module.exports = {
                         loader: 'svg-sprite-loader',
                         options: {
                             extract: true,
-                            spriteFilename: 'sprite.svg'
+                            spriteFilename: 'svg/spritesheet.svg'
                         },
                     },
                     'svgo-loader',
