@@ -4,7 +4,7 @@ const SpriteLoaderPlugin = require("svg-sprite-loader/plugin");
 
 module.exports = {
     entry: {
-        index: './src/js/app.js',
+        index: './src/js/index.js',
         
     },
     module: {
