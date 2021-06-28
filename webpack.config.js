@@ -9,10 +9,7 @@ module.exports = {
     },
     module: {
         rules: [
-            {
-                test: /\.js$/,
-                use: 'babel-loader'
-            },
+            
             {
                 test: /\.html$/,
                 use: 'html-loader'
